@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import { loader as dataLoader } from "./util/fetch";
-import RootLayout from "./pages/root";
+import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
 import HomePage from "./pages/Home";
 import DestinationPage from "./pages/Destinations";
