@@ -1,0 +1,130 @@
+.technology {
+  background-image: url("/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.technology-content {
+  margin-top: 4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.technology-content__wrapper {
+  width: 65%;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.technology-content__info {
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.technology-content__image {
+  position: relative;
+  right: -6rem;
+}
+
+.technology-content__image.landscape {
+  display: none;
+}
+
+.technology-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.technology-nav a {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--white);
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology-nav a:hover {
+  background-color: var(--white);
+}
+
+.technology-nav a:hover h4 {
+  color: var(--darkBlue);
+}
+
+.technology-nav a:active,
+.technology-nav a.active {
+  background-color: var(--white);
+}
+
+.technology-nav a.active h4 {
+  color: var(--darkBlue);
+}
+
+.technology-nav a h4 {
+  color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+  .technology-content {
+    flex-direction: column-reverse;
+  }
+
+  .technology-content__wrapper {
+    width: 90%;
+
+    flex-direction: column;
+  }
+
+  .technology-nav {
+    flex-direction: row;
+    order: 0;
+  }
+
+  .technology-content__info {
+    width: 90%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technology-content__info p:last-of-type {
+    width: 90%;
+  }
+
+  .technology-content__image img {
+    width: 105%;
+  }
+
+  .technology-content__image.landscape {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+  }
+
+  .technology-content__image.potrait {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .technology-content__info {
+    width: 100%;
+  }
+}

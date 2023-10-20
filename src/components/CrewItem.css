@@ -1,0 +1,138 @@
+.crews {
+  padding-bottom: 0;
+  background-image: url("/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crews-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crews-content__image {
+  width: 60%;
+  overflow: hidden;
+}
+
+.crews-content__image img {
+  position: relative;
+  bottom: -0.5rem;
+}
+
+.crews-content__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.crews-content__text p {
+  width: 80%;
+}
+
+.crews-content__profile {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crews-content__profile h4 {
+  opacity: 0.5;
+}
+
+.crews-nav {
+  margin-top: 6rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.crews-nav li {
+  display: inline-flex;
+}
+
+.crews-nav a {
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff16;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.crews-nav a:hover {
+  background-color: var(--white);
+}
+
+.crews-nav a.active {
+  background-color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+  .crews-content {
+    margin-top: 4rem;
+
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .crews-content__image {
+    margin-top: 6rem;
+  }
+
+  .crews-content__text {
+    width: 90%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crews-content__text > p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .crews {
+    background-image: url("/crew/background-crew-mobile.jpg");
+    text-align: center;
+  }
+
+  .crews section {
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .crews-content {
+    margin-top: unset;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .crews-content__image {
+    width: 100%;
+    margin-top: unset;
+    border-bottom: 2px solid #ffffff25;
+  }
+
+  .crews-content__image img {
+    width: 60%;
+  }
+
+  .crews-content__text {
+    width: 100%;
+  }
+
+  .crews-nav {
+    margin-top: unset;
+    margin-bottom: 2rem;
+    order: -1;
+  }
+}
